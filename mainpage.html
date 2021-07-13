@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallelax</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">WildFlower</a>
+        <ul>
+            <li><a href="mainpage.html">Explore</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="travel.html">About</a></li>
+            <li><a href="purchase.html">Booking</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="socialmedia.html">Socials</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Lets Travel & Explore more!</h2>
+        <a href="#sec" id="btn">Scroll Down</a>
+        <img src="mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Book for your Fav destination</h2>
+        <h3>We got your back!</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Error sed est, odio autem cumque sequi. Voluptatum ullam corporis ut nam,
+            eaque provident delectus, accusantium dignissimos animi rerum numquam reiciendis vitae,
+            perferendis totam nesciunt accusamus sint!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, facilis iste officia debitis quod accusamus voluptatem. Neque harum nulla rerum molestiae
+            corporis?
+            Ab, asperiores quis. <br></br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nesciunt aliquam dolorem voluptas porro asperiores modi commodi voluptate, provident iusto sed rerum
+            repellat distinctio
+            animi, eum deleniti optio repudiandae in adipisci tempora pariatur reprehenderit. Magnam asperiores beatae
+            fugit
+            perspiciatis voluptate repudiandae dolorum cum consectetur molestiae voluptates. Obcaecati?
+            Ab, asperiores quis. <br></br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nesciunt aliquam dolorem voluptas porro asperiores modi commodi voluptate, provident iusto sed rerum
+            repellat distinctio
+            animi, eum deleniti optio repudiandae in adipisci tempora pariatur reprehenderit. Magnam asperiores beatae
+            fugit
+            perspiciatis voluptate repudiandae dolorum cum consectetur molestiae voluptates. Obcaecati?
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Error sed est, odio autem cumque sequi. Voluptatum ullam corporis ut nam,
+            eaque provident delectus, accusantium dignissimos animi rerum numquam reiciendis vitae,
+            perferendis totam nesciunt accusamus sint!. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, facilis iste officia debitis quod accusamus voluptatem. Neque harum nulla rerum molestiae
+            corporis?
+            Ab, asperiores quis. <br></br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nesciunt aliquam dolorem voluptas porro asperiores modi commodi voluptate, provident iusto sed rerum
+            repellat distinctio
+            animi, eum deleniti optio repudiandae in adipisci tempora pariatur reprehenderit. Magnam asperiores beatae
+            fugit
+            perspiciatis voluptate repudiandae dolorum cum consectetur molestiae voluptates. Obcaecati?
+            Ab, asperiores quis. <br></br> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Nesciunt aliquam dolorem voluptas porro asperiores modi commodi voluptate, provident iusto sed rerum
+            repellat distinctio
+            animi, eum deleniti optio repudiandae in adipisci tempora pariatur reprehenderit. Magnam asperiores beatae
+            fugit
+            perspiciatis voluptate repudiandae dolorum cum consectetur molestiae voluptates. Obcaecati?</p>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function (){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.05 + 'px';
+            mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.marginTop = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>

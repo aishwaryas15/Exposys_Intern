@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background: rgb(27, 27, 27);
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 170px;
+    padding: 0 29px;
+}
+nav ul{
+    height: 62px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 29px;
+}
+
+nav ul li a{
+    color:rosybrown;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+nav ul li a:hover{
+    color:thistle;
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 50vh;
+    height: 28px;
+    border-radius: 3px;
+    margin: 0 20px;
+    padding: 0 12px;
+}
+.btn{
+    padding: 5px 9px;
+    color: white;
+    background-color: rosybrown;
+    border: 5px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.my-1{
+    margin: 6px 0;
+}
+.my-2{
+    margin: 26px 0;
+}
+.text-center{
+    text-align: center;
+}
+.search button{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.container{
+    min-height: calc(100vh - 62px - 12vh);
+}
+.slider{
+    width: 100vw;
+    margin: 12px auto;
+    overflow: hidden;
+}
+
+
+.card{
+    width: 81vw;
+    margin: 37px auto;
+}
+.cards{
+    display:flex;
+    overflow: scroll;
+    
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card-item img{
+    height: 300px;
+    width: 200px;
+}
+.card h2{
+    font-family: 'Dela Gothic One', cursive;
+}
+.lines{
+    max-width: 91vw;
+    margin: auto;
+}
+footer{
+    height: 12vh;
+    background-color:rgb(27, 27, 27);
+    color: rosybrown;
+    font-family: 'Dela Gothic One', cursive;
+}

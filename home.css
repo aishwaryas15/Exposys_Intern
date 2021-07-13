@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body
+{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055,#0c204d);
+}
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+header ul li a:hover ,
+header ul li a.active
+{
+    background: #fff;
+    color: #2b1055;
+
+}
+header{
+    background: rgb(27, 27, 27);
+}
+nav{
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 170px;
+    padding: 0 29px;
+}
+nav ul{
+    height: 62px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 29px;
+}
+
+nav ul li a{
+    color:rosybrown;
+    text-decoration: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+nav ul li a:hover{
+    color:thistle;
+    font-weight: bolder;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.search input{
+    width: 50vh;
+    height: 28px;
+    border-radius: 3px;
+    margin: 0 20px;
+    padding: 0 12px;
+}
+.btn{
+    padding: 5px 9px;
+    color: white;
+    background-color: rosybrown;
+    border: 5px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.my-1{
+    margin: 6px 0;
+}
+.my-2{
+    margin: 26px 0;
+}
+.my-2{
+    color: #e1e1e1;
+}
+.text-center{
+    text-align: center;
+}
+.search button{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 900;
+}
+.container{
+    min-height: calc(100vh - 62px - 12vh);
+}
+.slider{
+    width: 98vw;
+    margin: 2px auto;
+    overflow: hidden;
+}
+
+
+.card{
+    width: 81vw;
+    margin: 37px auto;
+}
+.cards{
+    display:flex;
+    overflow: scroll;
+    
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.card-item img{
+    height: 300px;
+    width: 200px;
+}
+.card h2{
+    font-family: 'Dela Gothic One', cursive;
+}
+.lines{
+    max-width: 91vw;
+    margin: auto;
+    color: #e1e1e1;
+}
+.rating{
+    text-align: center;
+    color: red;
+}
+footer{
+    height: 12vh;
+    text-align: center;
+    background-color:rgb(27, 27, 27);
+    color: #e1e1e1;
+    font-family: 'Dela Gothic One', cursive;
+}
